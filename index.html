@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GitHub 中文助手</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: "Microsoft YaHei", sans-serif; background: #F5F5F5; color: #212121;
+         max-width: 720px; margin: 0 auto; padding: 24px 20px 60px; }
+  h1 { font-size: 42px; color: #C62828; margin: 10px 0 6px; }
+  .sub { font-size: 22px; color: #757575; margin-bottom: 30px; }
+  h2 { font-size: 30px; margin: 38px 0 16px; border-left: 8px solid #C62828; padding-left: 14px; }
+  a.btn { display: block; text-decoration: none; background: #fff; border: 3px solid #BDBDBD;
+          border-radius: 18px; padding: 20px 24px; margin-bottom: 14px; color: #212121; }
+  a.btn:hover { border-color: #C62828; }
+  a.btn b { font-size: 28px; display: block; }
+  a.btn span { font-size: 19px; color: #757575; }
+  a.btn.red { background: #C62828; border-color: #C62828; }
+  a.btn.red b, a.btn.red span { color: #fff; }
+  details { background: #fff; border: 3px solid #BDBDBD; border-radius: 18px;
+            padding: 20px 24px; margin-bottom: 14px; }
+  summary { font-size: 26px; font-weight: bold; cursor: pointer; }
+  details ol { margin: 16px 0 4px 28px; }
+  details li { font-size: 21px; line-height: 1.8; }
+  table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 14px;
+          overflow: hidden; border: 3px solid #BDBDBD; }
+  td { padding: 12px 16px; font-size: 20px; border-bottom: 1px solid #EEE; }
+  td:first-child { font-weight: bold; color: #C62828; white-space: nowrap; }
+  tr:last-child td { border-bottom: none; }
+  .tip { font-size: 19px; color: #757575; margin-top: 8px; }
+</style>
+</head>
+<body>
+<h1>GitHub 中文助手</h1>
+<p class="sub">点下面的按钮直达原生 GitHub（账号、操作都是原版），再配合下方任一汉化方案即可全中文使用</p>
+
+<h2>常用入口</h2>
+<a class="btn red" href="https://luoyoulai-collab.github.io/shebao-web/" target="_blank">
+  <b>我的工具：一键社保认证（网页版）</b><span>给老人用的语音教练页面，点开即用</span>
+</a>
+<a class="btn red" href="https://github.com/luoyoulai-collab/shebao-web" target="_blank">
+  <b>我的仓库 shebao-web</b><span>网页版项目的代码页面</span>
+</a>
+<a class="btn" href="https://github.com/luoyoulai-collab/shebao-web/settings/pages" target="_blank">
+  <b>仓库设置 · Pages</b><span>Settings=设置，Pages=网页托管（发布状态在这里看）</span>
+</a>
+<a class="btn" href="https://github.com/luoyoulai-collab?tab=repositories" target="_blank">
+  <b>我的全部仓库</b><span>Repositories = 仓库</span>
+</a>
+<a class="btn" href="https://github.com/new" target="_blank">
+  <b>新建仓库</b><span>New repository = 新建仓库</span>
+</a>
+<a class="btn" href="https://github.com/settings/tokens" target="_blank">
+  <b>Token（令牌）管理</b><span>Personal access tokens = 个人访问令牌，配好后存本机、别外发</span>
+</a>
+<a class="btn" href="https://docs.github.com/zh" target="_blank">
+  <b>GitHub 官方帮助文档（官方中文版）</b><span>查"怎么用 GitHub"看这里，官方自带中文</span>
+</a>
+
+<h2>让整个 GitHub 变中文（二选一，或都装）</h2>
+
+<details open>
+  <summary>方案一：Edge 自带翻译（30 秒设置，之后全自动）</summary>
+  <ol>
+    <li>用 <b>Edge 浏览器</b>打开 <a href="https://github.com" target="_blank">github.com</a></li>
+    <li>地址栏<b>右侧</b>出现翻译图标，点它，选择「中文（简体）」</li>
+    <li>弹窗里勾选「<b>始终翻译英文网站</b>」→ 完成</li>
+    <li>以后打开 GitHub 任何页面都自动是中文，点按钮、改设置不受任何影响</li>
+  </ol>
+</details>
+
+<details>
+  <summary>方案二：GitHub 汉化插件（术语翻译最准确）</summary>
+  <ol>
+    <li>Edge 应用商店搜索「<b>Tampermonkey</b>」，点获取安装</li>
+    <li>浏览器打开 <b>greasyfork.org</b>，搜索「<b>GitHub 中文化插件</b>」</li>
+    <li>点绿色按钮「安装此脚本」，弹窗里确认安装</li>
+    <li>刷新 GitHub 页面，整站自动中文（跳转后依然生效）</li>
+  </ol>
+</details>
+
+<h2>常见英文对照（在汉化生效前应急用）</h2>
+<table>
+  <tr><td>Settings</td><td>设置</td></tr>
+  <tr><td>Pages</td><td>网页托管（GitHub Pages 发布）</td></tr>
+  <tr><td>Code</td><td>代码（仓库主页默认标签）</td></tr>
+  <tr><td>Add file → Upload files</td><td>添加文件 → 上传文件（拖文件进去就能传）</td></tr>
+  <tr><td>Commit changes</td><td>提交修改（改完文件点绿色按钮保存）</td></tr>
+  <tr><td>Branch / main</td><td>分支 / 主分支（一般不用动）</td></tr>
+  <tr><td>Deploy from a branch</td><td>从分支发布（Pages 设置里选这个）</td></tr>
+  <tr><td>Your site is live at</td><td>你的网站已发布在（下面就是网址）</td></tr>
+  <tr><td>Generate new token</td><td>生成新令牌</td></tr>
+  <tr><td>Delete / Edit</td><td>删除 / 编辑</td></tr>
+</table>
+
+<p class="tip">提示：汉化只改「显示」，你自己填的仓库名等英文内容保持原样，这是正常的。<br>
+线上地址：本页发布在 GitHub Pages，也可以把文件存到电脑上双击打开（E:\9.一键社保认证工具\GitHub中文助手.html）。</p>
+</body>
+</html>
