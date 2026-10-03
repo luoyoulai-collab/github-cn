@@ -18,6 +18,8 @@
   a.btn span { font-size: 19px; color: #757575; }
   a.btn.red { background: #C62828; border-color: #C62828; }
   a.btn.red b, a.btn.red span { color: #fff; }
+  a.btn.green { background: #2E7D32; border-color: #2E7D32; }
+  a.btn.green b, a.btn.green span { color: #fff; }
   details { background: #fff; border: 3px solid #BDBDBD; border-radius: 18px;
             padding: 20px 24px; margin-bottom: 14px; }
   summary { font-size: 26px; font-weight: bold; cursor: pointer; }
@@ -58,25 +60,40 @@
   <b>GitHub 官方帮助文档（官方中文版）</b><span>查"怎么用 GitHub"看这里，官方自带中文</span>
 </a>
 
-<h2>让整个 GitHub 变中文（二选一，或都装）</h2>
+<h2>让 GitHub 变中文（Google 浏览器 · 二选一）</h2>
 
 <details open>
-  <summary>方案一：Edge 自带翻译（30 秒设置，之后全自动）</summary>
+  <summary>方案一：Chrome 自带翻译（设置一次，点链接自动变中文）</summary>
   <ol>
-    <li>用 <b>Edge 浏览器</b>打开 <a href="https://github.com" target="_blank">github.com</a></li>
-    <li>地址栏<b>右侧</b>出现翻译图标，点它，选择「中文（简体）」</li>
-    <li>弹窗里勾选「<b>始终翻译英文网站</b>」→ 完成</li>
-    <li>以后打开 GitHub 任何页面都自动是中文，点按钮、改设置不受任何影响</li>
+    <li>把 <b>chrome://settings/languages</b> 复制粘贴到地址栏，回车</li>
+    <li>打开「<b>使用 Google 翻译</b>」开关</li>
+    <li>用 Chrome 打开 <a href="https://github.com" target="_blank">github.com</a>，点地址栏右侧的<b>翻译图标</b>，选「中文（简体）」</li>
+    <li>在翻译弹窗里点「更多选项」，勾选「<b>始终翻译英文</b>」</li>
+    <li>完成！以后从本页点任何 GitHub 链接，页面打开就自动变中文</li>
   </ol>
+  <p class="tip">小提示：机器翻译偶尔会把代码、人名也翻掉，追求更地道的推荐方案二。</p>
 </details>
 
 <details>
-  <summary>方案二：GitHub 汉化插件（术语翻译最准确）</summary>
+  <summary>方案二（推荐）：汉化插件，两次点击装好，术语最准</summary>
   <ol>
-    <li>Edge 应用商店搜索「<b>Tampermonkey</b>」，点获取安装</li>
-    <li>浏览器打开 <b>greasyfork.org</b>，搜索「<b>GitHub 中文化插件</b>」</li>
-    <li>点绿色按钮「安装此脚本」，弹窗里确认安装</li>
+    <li>点下面第一个按钮，在 Chrome 商店页点「添加至 Chrome」</li>
+    <li>回到本页，点第二个按钮，弹窗里点「安装」</li>
     <li>刷新 GitHub 页面，整站自动中文（跳转后依然生效）</li>
+  </ol>
+  <a class="btn" href="https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo" target="_blank">
+    <b>① 安装 Tampermonkey 扩展</b><span>Chrome 应用商店（"油猴"脚本管理器）</span>
+  </a>
+  <a class="btn green" href="https://luoyoulai-collab.github.io/github-cn/github-chinese.user.js" target="_blank">
+    <b>② 一键安装 GitHub 中文化脚本</b><span>装好 ① 后点这里，弹窗点「安装」即可</span>
+  </a>
+  <p class="tip">脚本来自开源项目 maboloshi/github-chinese（3.4 万星，GPL-3.0 协议），本站仅托管分发。</p>
+</details>
+
+<details>
+  <summary>用 Edge 的话（顺带一提）</summary>
+  <ol>
+    <li>打开 github.com → 地址栏右侧翻译图标 → 选「中文（简体）」→ 勾选「始终翻译英文网站」</li>
   </ol>
 </details>
 
